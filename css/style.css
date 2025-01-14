@@ -94,7 +94,7 @@ main {
     /*main container styling and sizing*/
     background-color: var(--secondary-light-color);
     width: 70%;
-    height: 80%;
+    padding-bottom: 5rem;
     margin: auto;
     border-radius: 5px;
 }
