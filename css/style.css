@@ -3,42 +3,77 @@
     --main-color: #45abe9;
     --secondary-color: #f6f8f9;
     --secondary-light-color: white;
-
-    /*categories colors*/
     --extra-tools-color: #cad0d5;
-    --editorial-tag-color: #45abe9;
-    --q1Goals-tag-color: #9c72e4;
-    --recruiting-tag-color: #64c0a9;
-    --mobile-tag-color: #f29e33;
-    --website-tag-color: #d863a0;
-    --sales-tag-color: #b0c926;
 }
 
+/*PREMADE CATEGORIES*/
+.ct::after {
+    /*used for general category button and text style*/
+    font-size: 12px;
+    color: var(--secondary-light-color);
+    border-radius: 0.6rem;
+    padding: 0.3rem 0.7rem;
+}
+
+.editorial::after {
+    content: "Editorial";
+    background-color: #45abe9;
+}
+
+.q1-goals::after {
+    content: "Q1 Goals";
+    background-color: #9c72e4;
+}
+
+.recruiting::after {
+    content: "Recruiting";
+    background-color: #64c0a9;
+}
+
+.mobile::after {
+    content: "Mobile";
+    background-color: #f29e33;
+}
+
+.website::after {
+    content: "Website";
+    background-color: #d863a0;
+}
+
+.sales::after {
+    content: "Sales";
+    background-color: #b0c926;
+}
+
+/*premade categories end*/
+
 * {
+    /*remove margin and set general font*/
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
-    height: 100%;
     /*used this to have main occupy full height available*/
+    height: 100%;
 }
 
 body {
-    height: 100%;
     /*used this to have main occupy full height available*/
+    height: 100%;
     background-color: var(--secondary-color);
 }
 
 header {
+    /*used this to place the topleft logo*/
     background-color: var(--secondary-light-color);
     height: 70px;
     padding-top: 0.75rem;
     padding-left: 1.5rem;
-
 }
 
 header h1 {
+    /*use to style only the h1 titles in the header*/
     display: inline;
     font-size: 35px;
     font-weight: 700;
@@ -47,65 +82,72 @@ header h1 {
 }
 
 main {
+    /*used the previous two lines commented to have main occupy full height available*/
     background-color: var(--secondary-color);
     height: 100%;
-    /*used the previous two line commented to have main occupy full height available*/
     width: 100%;
     padding-top: 2rem;
+    /*padding to separate main from header*/
 }
 
 .container {
+    /*main container styling and sizing*/
     background-color: var(--secondary-light-color);
     width: 70%;
     height: 80%;
     margin: auto;
     border-radius: 5px;
-
-
 }
 
 .container hr {
+    /*transparent line in the main container*/
     height: 0.2rem;
     background-color: var(--secondary-color);
     border: 0px;
 
 }
 
-.container div {
+.container>div {
+    /*used to align content in the container selector is for only the direct child divs*/
     padding-left: 3rem;
 }
 
 .tool-section {
+    /*keeps the buttons centered vertically (slightly lower as in the image)*/
     height: 3rem;
 }
 
 .tool-section input[type=button] {
+    /*used for standard style of only the buttons inside an item with class tool-section*/
     margin-top: 0.55rem;
     border-radius: 0.25rem;
     padding: 0.5rem;
 }
 
 .task-adder {
+    /*used to style the "add task" button*/
     background-color: var(--main-color);
     border-width: 0px;
-
     color: var(--secondary-light-color);
 }
 
 .section-adder {
+    /*used to style the "add section" button*/
     background-color: var(--secondary-light-color);
     color: var(--extra-tools-color);
-
     border-width: 1.5px;
     border-color: var(--extra-tools-color);
     border-style: groove;
 }
 
-.content-section {
+.heading {
+    /*used to separate all the main headings from the tasks above*/
     margin-top: 2rem;
+
 }
 
 .done::before {
+    /*used to add the checkmark*/
     color: green;
     border: 1px solid;
     border-radius: 50%;
@@ -114,9 +156,16 @@ main {
 }
 
 .undone::before {
+    /*used to add the cross*/
     color: red;
     border: 1px solid;
     border-radius: 50%;
     padding: 1px 3px 1px 3px;
     content: "\2716";
+}
+
+.task {
+    /*used for general task text style*/
+    margin-top: 1rem;
+    font-weight: 600;
 }
