@@ -1,0 +1,13 @@
+:root {
+    /*main colors*/
+    --main-color: #45abe9;
+    --secondary-color: #cad0d5;
+
+    /*categories colors*/
+    --editorial-tag-color: #45abe9;
+    --q1Goals-tag-color: #9c72e4;
+    --recruiting-tag-color: #64c0a9;
+    --mobile-tag-color: #f29e33;
+    --website-tag-color: #d863a0;
+    --sales-tag-color: #b0c926;
+}
