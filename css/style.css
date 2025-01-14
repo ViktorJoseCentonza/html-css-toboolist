@@ -1,9 +1,11 @@
 :root {
     /*main colors*/
     --main-color: #45abe9;
-    --secondary-color: #cad0d5;
+    --secondary-color: #f6f8f9;
+    --secondary-light-color: white;
 
     /*categories colors*/
+    --extra-tools-color: #cad0d5;
     --editorial-tag-color: #45abe9;
     --q1Goals-tag-color: #9c72e4;
     --recruiting-tag-color: #64c0a9;
@@ -13,21 +15,91 @@
 }
 
 * {
-    padding: 0;
-    border: 0;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    height: 100%;
+    /*used this to have main occupy full height available*/
+}
+
+body {
+    height: 100%;
+    /*used this to have main occupy full height available*/
+    background-color: var(--secondary-color);
+}
+
 header {
+    background-color: var(--secondary-light-color);
     height: 70px;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-top: 0.75rem;
+    padding-left: 1.5rem;
 
 }
 
 header span {
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: 700;
 
     vertical-align: top;
+}
+
+main {
+    background-color: var(--secondary-color);
+    height: 100%;
+    /*used the previous two line commented to have main occupy full height available*/
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.container {
+    background-color: var(--secondary-light-color);
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    border-radius: 5px;
+
+
+}
+
+.container hr {
+    height: 0.2rem;
+    background-color: var(--secondary-color);
+    border: 0px;
+
+}
+
+.container div {
+    padding-left: 3rem;
+}
+
+.tool-section {
+    height: 3rem;
+}
+
+.tool-section input[type=button] {
+    margin-top: 0.55rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.task-adder {
+    background-color: var(--main-color);
+    border-width: 0px;
+
+    color: var(--secondary-light-color);
+}
+
+.section-adder {
+    background-color: var(--secondary-light-color);
+    color: var(--extra-tools-color);
+
+    border-width: 1.5px;
+    border-color: var(--extra-tools-color);
+    border-style: groove;
+}
+
+.content-section {
+    margin-top: 2rem;
 }
