@@ -7,7 +7,7 @@
 }
 
 /*PREMADE CATEGORIES*/
-.ct::after {
+.ct {
     /*used for general category button and text style*/
     font-size: 12px;
     color: var(--secondary-light-color);
@@ -15,33 +15,27 @@
     padding: 0.3rem 0.7rem;
 }
 
-.editorial::after {
-    content: "Editorial";
+.editorial {
     background-color: #45abe9;
 }
 
-.q1-goals::after {
-    content: "Q1 Goals";
+.q1-goals {
     background-color: #9c72e4;
 }
 
-.recruiting::after {
-    content: "Recruiting";
+.recruiting {
     background-color: #64c0a9;
 }
 
-.mobile::after {
-    content: "Mobile";
+.mobile {
     background-color: #f29e33;
 }
 
-.website::after {
-    content: "Website";
+.website {
     background-color: #d863a0;
 }
 
-.sales::after {
-    content: "Sales";
+.sales {
     background-color: #b0c926;
 }
 
